@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glassfish-web-app PUBLIC "-//GlassFish.org//DTD
+GlassFish Application Server 3.1 Servlet 3.0//EN"
+"http://glassfish.org/dtds/glassfish-web-app_3_0-1.dtd">
+<glassfish-web-app>
+	<!-- Context Root. 
+	When you deploy a web module, if you do not specify a context
+	root, the default is the name of the WAR file without the .war extension. The web
+	module context root must be unique within the server instance. 
+	-->
+	<context-root>/backend</context-root>
+	
+	<!-- class-loader delegate.
+	(optional) If true, the web module follows the standard class loader
+	delegation model and delegates to its parent class loader first before
+	looking in the local class loader. You must set this to true for a web
+	module that accesses EJB components or that acts as a web service client
+	or endpoint.
+	-->
+	<class-loader delegate="true" />
+</glassfish-web-app>
